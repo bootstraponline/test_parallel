@@ -1,0 +1,20 @@
+$ parallel_rspec spec/
+4 processes for 2 specs, ~ 0 specs per process
+a
+c
+..d
+b
+..
+
+
+Finished in 1 minute 0.01 seconds (files took 0.14545 seconds to load)
+2 examples, 0 failures
+
+Finished in 1 minute 0.01 seconds (files took 0.15642 seconds to load)
+2 examples, 0 failures
+
+
+
+4 examples, 0 failures
+
+Took 61 seconds (1:01)

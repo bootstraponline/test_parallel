@@ -1,0 +1,9 @@
+$ rspec
+a
+.b
+.c
+.d
+.
+
+Finished in 2 minutes 0 seconds (files took 0.20031 seconds to load)
+4 examples, 0 failures

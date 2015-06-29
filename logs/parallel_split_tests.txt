@@ -1,0 +1,30 @@
+$ export PARALLEL_SPLIT_TEST_PROCESSES=4
+$ parallel_split_test spec/
+Running examples in 4 processes
+d
+a
+c
+b
+...
+
+
+.
+
+Finished in 30 seconds (files took 0.23817 seconds to load)
+1 example, 0 failures
+
+Finished in 30 seconds (files took 0.23855 seconds to load)
+1 example, 0 failures
+
+Finished in 30 seconds (files took 0.23855 seconds to load)
+1 example, 0 failures
+
+Finished in 30 seconds (files took 0.24207 seconds to load)
+1 example, 0 failures
+
+Summary:
+1 example, 0 failures
+1 example, 0 failures
+1 example, 0 failures
+1 example, 0 failures
+Took 30.28 seconds with 4 processes

@@ -1,0 +1,57 @@
+$ rake sauce:spec
+Running examples in 4 processes
+Running examples in 4 processes
+Run options: include {:sauce=>true}
+c
+.
+
+Finished in 30 seconds (files took 0.50853 seconds to load)
+1 example, 0 failures
+Run options: include {:sauce=>true}
+d
+.
+
+Finished in 30 seconds (files took 0.52872 seconds to load)
+1 example, 0 failures
+Run options: include {:sauce=>true}
+d
+.
+
+Finished in 30 seconds (files took 0.53925 seconds to load)
+1 example, 0 failures
+Run options: include {:sauce=>true}
+a
+.
+
+Finished in 30 seconds (files took 0.54597 seconds to load)
+1 example, 0 failures
+Run options: include {:sauce=>true}
+b
+.
+
+Finished in 30 seconds (files took 0.54706 seconds to load)
+1 example, 0 failures
+Run options: include {:sauce=>true}
+c
+.
+
+Finished in 30.01 seconds (files took 0.5457 seconds to load)
+1 example, 0 failures
+Run options: include {:sauce=>true}
+b
+.
+
+Finished in 30.01 seconds (files took 0.54474 seconds to load)
+1 example, 0 failures
+Run options: include {:sauce=>true}
+a
+.
+
+Finished in 30 seconds (files took 0.54916 seconds to load)
+1 example, 0 failures
+Took 30.54 seconds with 4 processes
+Took 30.55 seconds with 4 processes
+
+8 examples, 0 failures
+
+Took 32 seconds

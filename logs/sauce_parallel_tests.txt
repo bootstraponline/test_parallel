@@ -1,0 +1,38 @@
+$ rake sauce:spec
+4 processes for 4 specs, ~ 1 specs per process
+Run options: include {:sauce=>true}
+a
+Run options: include {:sauce=>true}
+a
+Run options: include {:sauce=>true}
+c
+Run options: include {:sauce=>true}
+c
+..b
+b
+.d
+.d
+..
+
+Finished in 1 minute 0.01 seconds (files took 0.23859 seconds to load)
+2 examples, 0 failures
+
+
+
+Finished in 1 minute 0.01 seconds (files took 0.23993 seconds to load)
+2 examples, 0 failures
+
+.
+
+Finished in 1 minute 0.01 seconds (files took 0.30412 seconds to load)
+2 examples, 0 failures
+
+.
+
+Finished in 1 minute 0.01 seconds (files took 0.25581 seconds to load)
+2 examples, 0 failures
+
+
+8 examples, 0 failures
+
+Took 62 seconds (1:02)
