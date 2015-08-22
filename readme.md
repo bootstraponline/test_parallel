@@ -57,7 +57,7 @@ Took 30.28 seconds with 4 processes
 
 --
 
-## sauce_ruby with parallel_tests
+#### sauce_ruby with parallel_tests
 
 sauce_ruby default uses parallel_tests via `rake sauce:spec`
 
@@ -88,4 +88,39 @@ Took 30.55 seconds with 4 processes
 8 examples, 0 failures
 
 Took 32 seconds
+```
+
+##### test-queue (unpatched)
+
+By default [test-queue](https://github.com/tmm1/test-queue) runs tests by
+example group so it's the same result as parallel_tests.
+
+```
+$ rspec-queue --format progress spec
+Starting test-queue master (/tmp/test_queue_9461_70230273870620.sock)
+
+==> Summary (4 workers in 60.0197s)
+
+    [ 4]                                       0 examples, 0 failures         0 suites in 0.0076s      (pid 9467 exit 0)
+    [ 3]                                       0 examples, 0 failures         0 suites in 0.0086s      (pid 9466 exit 0)
+    [ 1]                                       2 examples, 0 failures         1 suites in 60.0155s      (pid 9464 exit 0)
+    [ 2]                                       2 examples, 0 failures         1 suites in 60.0163s      (pid 9465 exit 0)
+```
+
+#### test-queue (patched)
+
+[Patching test-queue](https://github.com/tmm1/test-queue/issues/25#issue-102483125) to
+run each example individually improves the test time by 50%.
+
+```
+$ rspec-queue --format progress spec
+Starting test-queue master (/tmp/test_queue_9586_70278316902940.sock)
+
+==> Summary (4 workers in 30.0312s)
+
+    [ 3]                                        1 example, 0 failures         1 suites in 30.0246s      (pid 9590 exit 0)
+    [ 1]                                        1 example, 0 failures         1 suites in 30.0269s      (pid 9588 exit 0)
+    [ 2]                                        1 example, 0 failures         1 suites in 30.0276s      (pid 9589 exit 0)
+    [ 4]                                        1 example, 0 failures         1 suites in 30.0273s      (pid 9591 exit 0)
+
 ```
