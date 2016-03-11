@@ -124,3 +124,5 @@ Starting test-queue master (/tmp/test_queue_9586_70278316902940.sock)
     [ 4]                                        1 example, 0 failures         1 suites in 30.0273s      (pid 9591 exit 0)
 
 ```
+
+Note that test-queue does [optimal scheduling of tests](https://facebook.github.io/jest/blog/2016/03/11/javascript-unit-testing-performance.html) by keeping track of the slowest tests and running them first.
