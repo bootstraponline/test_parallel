@@ -28,6 +28,7 @@ in 1 minute. Each file is run in a separate process. Tests run serially
 within the process.
 
 ```
+$ export PARALLEL_TEST_PROCESSORS=4
 $ parallel_rspec spec/
 4 processes for 2 specs, ~ 0 specs per process
 
